@@ -1,4 +1,3 @@
-
 public class Game extends StockableProduct {
  private String developer;
 	public Game() {

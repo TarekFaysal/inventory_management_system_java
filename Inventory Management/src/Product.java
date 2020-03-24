@@ -1,4 +1,5 @@
-Abstract class Product {
+
+public abstract class Product {
 
     private String name;
     private int productId;
@@ -52,7 +53,7 @@ Abstract class Product {
     public void setDiscount(double discount){
         this.discount = discount;
     }
-    public Abstract String getInfo();
+    public abstract String getInfo();
     public String toString(){
         return "name: " + name + " ProductId: " + productId + " Price: " + price + "Genre: " + genre + "yearPublished: " + yearPublished + "Discount: " + discount;
     }

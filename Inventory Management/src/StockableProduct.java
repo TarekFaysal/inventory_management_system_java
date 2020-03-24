@@ -1,4 +1,3 @@
-
 public class StockableProduct {
 
 	private int numberOfItemsStocked;
