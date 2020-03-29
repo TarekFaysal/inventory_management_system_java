@@ -2,7 +2,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Inventory implements Iterable<StockableProduct>{
-    ArrayList<StockableProduct> items;
+    ArrayList<StockableProduct> items = new ArrayList<>();
+    
+    
+    public Inventory() {
+    	
+    }
+    
     public void addItem(StockableProduct product){
         items.add(product);
     }
@@ -21,4 +27,5 @@ public class Inventory implements Iterable<StockableProduct>{
       return items.iterator();
     }
 
+    
 }

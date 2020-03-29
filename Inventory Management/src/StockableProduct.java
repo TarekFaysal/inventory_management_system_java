@@ -1,8 +1,8 @@
-public abstract class StockableProduct extends Product {
+public abstract class StockableProduct extends Product implements Stockable{
 
 	private int numberOfItemsStocked;
 	public StockableProduct() {
-		
+		super();
 	}
 	public StockableProduct(int numberOfItemsStocked) {
 		super();
@@ -27,6 +27,25 @@ public abstract class StockableProduct extends Product {
 		return "Number of Item Stocked: "+ numberOfItemsStocked;
 	}
 	
+	public void addStock(int num) {
+		this.numberOfItemsStocked = this.numberOfItemsStocked + num;
+		
+	}
+	public void removeStock(int num) {
+		if (this.numberOfItemsStocked - num > 0 ) {
+			this.numberOfItemsStocked = this.numberOfItemsStocked - num;
+		}else {
+			System.out.println("Not enough item in stock");
+		}
+		
+	}
+	public void editStock(int num) {
+		if(num>=0) {
+			this.numberOfItemsStocked = num;
+		}else {
+			System.out.println("Stock number can not be negative");
+		}
+}
 	
 
 }
