@@ -15,6 +15,8 @@ public class Main {
 		for (StockableProduct i: inv) {
 			System.out.println(i.getInfo());
 		}
+		
+		System.out.print(inv.getClass());
 	}
 
 }
