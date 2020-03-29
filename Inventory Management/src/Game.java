@@ -1,12 +1,19 @@
-public abstract class Game extends StockableProduct {
+public class Game extends StockableProduct {
  private String developer;
 	public Game() {
 		
 	}
 public  Game(String developer) {
+	super();
 	this.developer = developer;
 		
 	}
+public Game(String developer,int numberOfItemsStocked,String name, int productId, double price, String genre, int yearPublished, double discount) 
+{
+	super(numberOfItemsStocked,name,productId,price,genre,yearPublished,discount);
+	this.developer = developer;
+}
+
 public String getDeveloper()
 {
 	return developer;
@@ -19,7 +26,12 @@ public String toString()
 {
 	return "Developer's name is: "+developer;
 }
-public abstract String getInfo();
+@Override
+public String getInfo() {
+	
+	return "name: " + getName() + " ProductId: " + getProductId() + " Price: " + getPrice() + " Genre: " + getGenre() + " yearPublished: " + getYearPublished() + " Discount: " + getDiscount()+" Number of items stocked:"+getnumberOfItemsStocked()+" Developer: "+ developer;
+}
+
 
 
 }

@@ -1,8 +1,18 @@
-public abstract class Movie extends StockableProduct {
+public class Movie extends StockableProduct {
 
 	private String directorName;
 	public Movie() {
 		
+	}
+	public Movie(String directorName) 
+    {
+		super();
+		this.directorName = directorName;
+	}
+	public Movie(String directorName,int numberOfItemsStocked,String name, int productId, double price, String genre, int yearPublished, double discount) 
+    {
+		super(numberOfItemsStocked,name,productId,price,genre,yearPublished,discount);
+		this.directorName = directorName;
 	}
 	public String getdirectorName()
 	{
@@ -16,6 +26,9 @@ public abstract class Movie extends StockableProduct {
 	{
 		return "director's name is: "+directorName;
 	}
-	public abstract String getInfo();
+	@Override
+	public String getInfo() {
+		return "name: " + getName() + " ProductId: " + getProductId() + " Price: " + getPrice() + " Genre: " + getGenre() + " yearPublished: " + getYearPublished() + " Discount: " + getDiscount()+" Number of items stocked:"+getnumberOfItemsStocked()+" Director Name: "+ directorName;
+	}
 
 }
