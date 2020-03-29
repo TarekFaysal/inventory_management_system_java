@@ -7,7 +7,9 @@ public abstract class Product {
     private String genre;
     private int yearPublished;
     private double discount;
-
+    public Product() {
+    	
+    }
     public Product(String name, int productId, double price, String genre, int yearPublished, double discount){
         this.name = name;
         this.productId = productId;
