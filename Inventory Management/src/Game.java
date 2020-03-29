@@ -1,4 +1,4 @@
-public class Game extends StockableProduct {
+public abstract class Game extends StockableProduct {
  private String developer;
 	public Game() {
 		
@@ -19,10 +19,7 @@ public String toString()
 {
 	return "Developer's name is: "+developer;
 }
-public String getInfo()
-{
-	return "Developer's name is: "+developer;
-}
+public abstract String getInfo();
 
 
 }
