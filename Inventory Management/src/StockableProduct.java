@@ -46,6 +46,19 @@ public abstract class StockableProduct extends Product implements Stockable{
 			System.out.println("Stock number can not be negative");
 		}
 }
+	public void decreaseNumberOfItemsStockedByOne() {
+		
+		if (this.numberOfItemsStocked -1 > 0 ) {
+			this.numberOfItemsStocked = this.numberOfItemsStocked -1;
+		}else {
+			System.out.println("Not enough item in stock");
+		}
+		
+	}
+	public void increaseNumberOfItemsStockedByOne() {
+		this.numberOfItemsStocked++;
+	}
+	
 	
 
 }
