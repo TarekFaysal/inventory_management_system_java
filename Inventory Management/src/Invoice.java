@@ -62,13 +62,13 @@ public class Invoice {
 		
 		while(itr.hasNext()) {
 			if (itr.next() instanceof Game) {
-				countItem[0] += countItem[0];
+				countItem[0] += 1;
 			}
 			else if (itr.next() instanceof Music) {
-				countItem[1] += countItem[1];
+				countItem[1] += 1;
 			}
 			else if (itr.next() instanceof Movie) {
-				countItem[2] += countItem[2];
+				countItem[2] += 1;
 			}
 		}
 		

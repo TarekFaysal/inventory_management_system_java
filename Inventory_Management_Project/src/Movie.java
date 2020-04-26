@@ -29,11 +29,11 @@ public class Movie extends StockableProduct {
 	}
 	@Override
 	public String getInfo() {
-		return "Name: " + getName() + " ProductId: " + getProductId() + " Price: " + getPrice() + " Genre: " + getGenre() + " yearPublished: " + getYearPublished() + " Discount: " + getDiscount()+" Number of items stocked:"+getnumberOfItemsStocked()+" Director Name: "+ directorName;
+		return "\nName: " + getName() + " \nProductId: " + getProductId() + "\n Price: " + getPrice() + "\n Genre: " + getGenre() + "\n yearPublished: " + getYearPublished() + "\n Discount: " + getDiscount()+"\n Number of items stocked:"+getnumberOfItemsStocked()+"\n Director Name: "+ directorName;
 	}
 	public String getProductInfo() {
 
-		return "Name: " + getName() + " Price: " + getPrice() + "\n";
+		return "\nName: " + getName() + " Price: " + getPrice() + "";
 	}
 
 }

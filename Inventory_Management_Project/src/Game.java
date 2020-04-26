@@ -35,7 +35,7 @@ public String getInfo() {
 
 public String getProductInfo() {
 
-	return "Name: " + getName() + " \nPrice: " + getPrice() + "\n";
+	return "Name: " + getName() + " Price: " + getPrice() + "";
 }
 
 

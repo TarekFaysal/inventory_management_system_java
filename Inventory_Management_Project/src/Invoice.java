@@ -108,11 +108,11 @@ public class Invoice {
 	{
 		String str = "";
 		for (int i = 0; i< this.item.size(); i++){
-			str = str+item.get(i).getInfo();
+			str = str+item.get(i).getProductInfo();
 		}
-		for (Product product : this.items){
-			str = str+product.getProductInfo();
-		}
+		
+		
+		
 		return "Date: "+getLocalDateTime()+"\n"+str+ "\nTotal: "
 							+this.totalPrice+" \nDiscount: "
 							+(this.totalPrice-calculateDiscountedPrice())
