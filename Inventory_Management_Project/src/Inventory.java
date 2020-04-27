@@ -28,9 +28,7 @@ public class Inventory implements Iterable<StockableProduct>{
     public void sortByPrice() {
     	Collections.sort(items, new Comparator<StockableProduct>(){
     		public int compare(StockableProduct s1, StockableProduct s2) {
-    			int s1Price = (int)(s1.getPrice());
-    			int s2Price = (int)(s2.getPrice());
-    			return Integer.valueOf(s1Price).compareTo(s2Price);
+    			return Integer.valueOf((int)(s1.getPrice())).compareTo((int)(s2.getPrice()));
     		}
     	});
     }
